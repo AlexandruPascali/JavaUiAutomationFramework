@@ -53,7 +53,6 @@ public class TestRunner {
         System.out.println("The current url is: " + driver.getCurrentUrl());
         System.out.println("The current page title is: " + driver.getTitle());
 
-
         driver.close();
 
         driver.switchTo().window(currentTabName);
@@ -61,7 +60,5 @@ public class TestRunner {
         driver.quit();
 
         System.out.println("The test is finished and the driver is closed");
-
-
     }
 }
