@@ -32,6 +32,7 @@ public class DriverManager {
             default:
                 System.out.println("The webDriverType " + webDriverType + " is not defined!");
         }
+        driver.manage().window().maximize();
     }
 
     public static DriverManager getInstance() {
