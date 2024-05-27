@@ -11,7 +11,7 @@ public class ScrollManager {
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) DriverManager.getInstance().getDriver();
         javascriptExecutor.executeScript("arguments[0].scrollIntoView(false);", webElement);
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
